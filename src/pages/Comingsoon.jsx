@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Comingsoon() {
     return (
         <div>
@@ -16,7 +17,7 @@ function Comingsoon() {
 
             <div className="aximo-logo-section">
                 <div className="container">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="assets/images/logo/logo-white.svg" alt='' />
                     </a>
                 </div>
@@ -94,6 +95,9 @@ function Comingsoon() {
                     </div>
                 </div>
             </footer>
+
+
+
 
 
         </div>

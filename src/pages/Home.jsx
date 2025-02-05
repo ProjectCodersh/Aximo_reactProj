@@ -3,6 +3,7 @@ import React from 'react'
 function index() {
     return (
         <div>
+
             <div className="aximo-preloader-wrap">
                 <div className="aximo-preloader">
                     <div></div>
@@ -34,7 +35,7 @@ function index() {
                                 </div>
                                 <ul className="site-menu-main">
                                     <li className="nav-item nav-item-has-children">
-                                        <a href="#" className="nav-link-item drop-trigger">Demo <i className="fas fa-angle-down" /></a>
+                                        <a href="/" className="nav-link-item drop-trigger">Demo <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-1">
                                             <li className="sub-menu--item">
                                                 <a href="/">
@@ -77,7 +78,7 @@ function index() {
                                         <a href="/About" className="nav-link-item">About Us</a>
                                     </li>
                                     <li className="nav-item nav-item-has-children">
-                                        <a href="#" className="nav-link-item drop-trigger">Pages <i className="fas fa-angle-down" /></a>
+                                        <a href="/" className="nav-link-item drop-trigger">Pages <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-2">
                                             <li className="sub-menu--item">
                                                 <a href="/About">
@@ -85,12 +86,12 @@ function index() {
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="pricing.html">
+                                                <a href="/Pricing">
                                                     <span className="menu-item-text">Pricing</span>
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">blog <i className="fas fa-angle-down" /></a>
+                                                <a href="/" data-menu-get="h3" className="drop-trigger">blog <i className="fas fa-angle-down" /></a>
                                                 <ul className="sub-menu shape-none" id="submenu-3">
                                                     <li className="sub-menu--item">
                                                         <a href="/Blog">
@@ -110,7 +111,7 @@ function index() {
                                                 </ul>
                                             </li>
                                             <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Service<i className="fas fa-angle-down" />
+                                                <a href="/" data-menu-get="h3" className="drop-trigger">Service<i className="fas fa-angle-down" />
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-4">
                                                     <li className="sub-menu--item">
@@ -126,23 +127,23 @@ function index() {
                                                 </ul>
                                             </li>
                                             <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Team<i className="fas fa-angle-down" />
+                                                <a href="/" data-menu-get="h3" className="drop-trigger">Team<i className="fas fa-angle-down" />
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-5">
                                                     <li className="sub-menu--item">
-                                                        <a href="team.html">
+                                                        <a href="/Team">
                                                             <span className="menu-item-text">team</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-team.html">
+                                                        <a href="single-/Team">
                                                             <span className="menu-item-text">team details</span>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Portfolio<i className="fas fa-angle-down" />
+                                                <a href="/" data-menu-get="h3" className="drop-trigger">Portfolio<i className="fas fa-angle-down" />
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-6">
                                                     <li className="sub-menu--item">
@@ -156,14 +157,14 @@ function index() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-portfolio.html">
+                                                        <a href="Singleportfolio">
                                                             <span className="menu-item-text">Single Portfolio</span>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Utility<i className="fas fa-angle-down" />
+                                                <a href="/" data-menu-get="h3" className="drop-trigger">Utility<i className="fas fa-angle-down" />
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-7">
                                                     <li className="sub-menu--item">
@@ -177,7 +178,7 @@ function index() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="testimonial.html">
+                                                        <a href="/Testimonial">
                                                             <span className="menu-item-text">testimonial</span>
                                                         </a>
                                                     </li>
@@ -189,21 +190,21 @@ function index() {
                                                 </ul>
                                             </li>
                                             <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Account<i className="fas fa-angle-down" />
+                                                <a href="/" data-menu-get="h3" className="drop-trigger">Account<i className="fas fa-angle-down" />
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-8">
                                                     <li className="sub-menu--item">
-                                                        <a href="sign-up.html">
+                                                        <a href="/Signup">
                                                             <span className="menu-item-text">sign up</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="sign-in.html">
+                                                        <a href="/Signin">
                                                             <span className="menu-item-text">sign in</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="reset-password.html">
+                                                        <a href="/Resetpassword">
                                                             <span className="menu-item-text">reset password</span>
                                                         </a>
                                                     </li>
@@ -212,7 +213,7 @@ function index() {
                                         </ul>
                                     </li>
                                     <li className="nav-item nav-item-has-children">
-                                        <a href="#" className="nav-link-item drop-trigger">Blog <i className="fas fa-angle-down" /></a>
+                                        <a href="/" className="nav-link-item drop-trigger">Blog <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-9">
                                             <li className="sub-menu--item">
                                                 <a href="/Blog">
@@ -438,12 +439,12 @@ function index() {
                                 <img src="assets/images/v1/project1.png" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
-                                        <a href="single-portfolio.html">
+                                        <a href="Singleportfolio">
                                             <h3>Product Design</h3>
                                         </a>
                                         <p>Developing the look and feel of physical products, aesthetics, and functionality.</p>
                                     </div>
-                                    <a className="aximo-project-icon" href="single-portfolio.html">
+                                    <a className="aximo-project-icon" href="Singleportfolio">
                                         <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -456,12 +457,12 @@ function index() {
                                 <img src="assets/images/v1/project2.png" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
-                                        <a href="single-portfolio.html">
+                                        <a href="Singleportfolio">
                                             <h3>Logo and Branding</h3>
                                         </a>
                                         <p>Creating or refreshing a company's logo and developing a cohesive visual identity.</p>
                                     </div>
-                                    <a className="aximo-project-icon" href="single-portfolio.html">
+                                    <a className="aximo-project-icon" href="Singleportfolio">
                                         <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -474,12 +475,12 @@ function index() {
                                 <img src="assets/images/v1/project3.png" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
-                                        <a href="single-portfolio.html">
+                                        <a href="Singleportfolio">
                                             <h3>App UI/UX Design</h3>
                                         </a>
                                         <p>Designing the UI/UXe for mobile apps and web applications to ensure usability &amp; engagement.</p>
                                     </div>
-                                    <a className="aximo-project-icon" href="single-portfolio.html">
+                                    <a className="aximo-project-icon" href="Singleportfolio">
                                         <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -492,12 +493,12 @@ function index() {
                                 <img src="assets/images/v1/project4.png" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
-                                        <a href="single-portfolio.html">
+                                        <a href="Singleportfolio">
                                             <h3>Packaging Design</h3>
                                         </a>
                                         <p>Creating packaging solutions for products that not only protect attract customers on store.</p>
                                     </div>
-                                    <a className="aximo-project-icon" href="single-portfolio.html">
+                                    <a className="aximo-project-icon" href="Singleportfolio">
                                         <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -510,12 +511,12 @@ function index() {
                                 <img src="assets/images/v1/project1.png" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
-                                        <a href="single-portfolio.html">
+                                        <a href="Singleportfolio">
                                             <h3>Product Design</h3>
                                         </a>
                                         <p>Developing the look and feel of physical products, aesthetics, and functionality.</p>
                                     </div>
-                                    <a className="aximo-project-icon" href="single-portfolio.html">
+                                    <a className="aximo-project-icon" href="Singleportfolio">
                                         <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -528,12 +529,12 @@ function index() {
                                 <img src="assets/images/v1/project2.png" alt="" />
                                 <div className="aximo-project-wrap">
                                     <div className="aximo-project-data">
-                                        <a href="single-portfolio.html">
+                                        <a href="Singleportfolio">
                                             <h3>Logo and Branding</h3>
                                         </a>
                                         <p>Creating or refreshing a company's logo and developing a cohesive visual identity.</p>
                                     </div>
-                                    <a className="aximo-project-icon" href="single-portfolio.html">
+                                    <a className="aximo-project-icon" href="Singleportfolio">
                                         <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -819,7 +820,7 @@ function index() {
                                     </div>
                                 </div>
                                 <div className="aximo-team-data">
-                                    <a href="single-team.html">
+                                    <a href="single-/Team">
                                         <h3>Andrew Mark</h3>
                                     </a>
                                     <p>Creative Director</p>
@@ -856,7 +857,7 @@ function index() {
                                     </div>
                                 </div>
                                 <div className="aximo-team-data">
-                                    <a href="single-team.html">
+                                    <a href="single-/Team">
                                         <h3>Jack Taylor</h3>
                                     </a>
                                     <p>Senior Designer</p>
@@ -893,7 +894,7 @@ function index() {
                                     </div>
                                 </div>
                                 <div className="aximo-team-data">
-                                    <a href="single-team.html">
+                                    <a href="single-/Team">
                                         <h3>Martine Joy</h3>
                                     </a>
                                     <p>Project Manager</p>
@@ -930,7 +931,7 @@ function index() {
                                     </div>
                                 </div>
                                 <div className="aximo-team-data">
-                                    <a href="single-team.html">
+                                    <a href="single-/Team">
                                         <h3>Adam Straw</h3>
                                     </a>
                                     <p>Web Developer</p>
@@ -1005,7 +1006,7 @@ function index() {
                             <div className="col-lg-5">
                                 <div className="aximo-form-wrap">
                                     <h4>Send us a message</h4>
-                                    <form action="#">
+                                    <form action="/">
                                         <div className="aximo-form-field">
                                             <input type="text" placeholder="Your name" />
                                         </div>

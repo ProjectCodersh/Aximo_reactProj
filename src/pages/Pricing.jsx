@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Contact() {
+function Pricing() {
     return (
         <div>
+
             <div className="aximo-preloader-wrap">
                 <div className="aximo-preloader">
                     <div></div>
@@ -253,61 +254,114 @@ function Contact() {
 
             <div className="aximo-breadcrumb">
                 <div className="container">
-                    <h1 className="post__title">Contact Us</h1>
+                    <h1 className="post__title">Pricing Plans</h1>
                     <nav className="breadcrumbs">
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li aria-current="page"> Contact Us</li>
+                            <li aria-current="page"> Pricing Plans</li>
                         </ul>
                     </nav>
                 </div>
             </div>
             {/* End breadcrumb */}
 
-            <div className="section aximo-section-padding">
+            <div className="section aximo-section-padding3">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8">
-                            <div className="aximo-section-title">
-                                <h2>
-                                    <span className="aximo-title-animation">
-                                        Contact us for a
-                                        <span className="aximo-title-icon">
-                                            <img src="assets/images/v1/star2.png" alt="" />
-                                        </span>
-                                    </span>
-                                    personal experience
-                                </h2>
-                            </div>
-                        </div>
+                    <div className="aximo-pricing-title">
+                        <h2>
+                            Pick from one of our
+                            <span className="aximo-title-animation">
+                                ready packages
+                                <span className="aximo-title-icon">
+                                    <img src="assets/images/v1/star2.png" alt="" />
+                                </span>
+                            </span>
+                        </h2>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-5 order-lg-2">
-                            <div className="aximo-contact-thumb wow fadeInRight" data-wow-delay="0.1s">
-                                <img src="assets/images/contact/contact-thumb.png" alt="" />
+                    <div className="pricing-btn">
+                        <label>Billed monthly</label>
+                        <div className="toggle-btn">
+                            <input className="form-check-input btn-toggle price-deck-trigger" type="checkbox" id="flexSwitchCheckDefault" data-pricing-trigger data-target="#table-price-value" defaultChecked />
+                        </div>
+                        <label>Billed annually</label>
+                    </div>
+                    <div className="row" id="table-price-value" data-pricing-dynamic data-value-active="monthly">
+                        <div className="col-xl-4 col-md-6">
+                            <div className="aximo-pricing-wrap2 wow fadeInUpX" data-wow-delay="0.1s">
+                                <div className="aximo-pricing-header2">
+                                    <h5>Web Design Package</h5>
+                                </div>
+                                <div className="aximo-pricing-price2">
+                                    <h2>$</h2>
+                                    <h2 classname="aximo-price dynamic-value" data-active="{299}" data-monthly="{299}" data-yearly="{399}">
+                                    </h2>
+
+                                </div>
+                                <div className="aximo-pricing-description">
+                                    <p>Web design packages offered a range of services and features to create websites</p>
+                                </div>
+                                <div className="aximo-pricing-body2">
+                                    <ul>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Consultation &amp; Discovery</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Responsive Design</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />E-commerce Integration</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Custom Web Design</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Testing and Quality Assurance</li>
+                                    </ul>
+                                </div>
+                                <a className="aximo-pricing-btn2" href>Select the package</a>
                             </div>
                         </div>
-                        <div className="col-lg-7">
-                            <div className="aximo-main-form">
-                                <form action="#">
-                                    <div className="aximo-main-field">
-                                        <label>Your name</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className="aximo-main-field">
-                                        <label>Email Address</label>
-                                        <input type="email" />
-                                    </div>
-                                    <div className="aximo-main-field">
-                                        <label>Phone No</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className="aximo-main-field">
-                                        <label>Write your message here...</label>
-                                        <textarea name="textarea" defaultValue={""} />
-                                    </div>
-                                    <button id="aximo-main-btn" type="submit">Send Message</button>
-                                </form>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="aximo-pricing-wrap2 wow fadeInUpX" data-wow-delay="0.2s">
+                                <div className="aximo-pricing-header2">
+                                    <h5>UX/UI Package</h5>
+                                </div>
+                                <div className="aximo-pricing-price2">
+                                    <h2>$</h2>
+                                    <h2 classname="aximo-price dynamic-value" data-active="{499}" data-monthly="{499}" data-yearly="{599}">
+                                    </h2>
+
+                                </div>
+                                <div className="aximo-pricing-description">
+                                    <p>UX/UI package offered a set of services aimed at designing user-friendly UI/UX</p>
+                                </div>
+                                <div className="aximo-pricing-body2">
+                                    <ul>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Information Architecture</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Wireframing &amp; Prototyping</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Usability Testing</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Visual Design &amp; </li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />User Interface (UI) Design</li>
+                                    </ul>
+                                </div>
+                                <a className="aximo-pricing-btn2 active" href>Select the package</a>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="aximo-pricing-wrap2 wow fadeInUpX" data-wow-delay="0.3s">
+                                <div className="aximo-pricing-header2">
+                                    <h5>Branding Package</h5>
+                                </div>
+                                <div className="aximo-pricing-price2">
+                                    <h2>$</h2>
+                                    <h2 classname="aximo-price dynamic-value" data-active="{299}" data-monthly="{299}" data-yearly="{399}">
+                                    </h2>
+
+                                </div>
+                                <div className="aximo-pricing-description">
+                                    <p>Branding package typically includes a comprehensive set of brand's identity</p>
+                                </div>
+                                <div className="aximo-pricing-body2">
+                                    <ul>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Brand Guidelines</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Stationery &amp; Website Design</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Social Media Assets</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Signage &amp; Packaging Design</li>
+                                        <li><img src="assets/images/icon/check.svg" alt="" />Brand Launch Support</li>
+                                    </ul>
+                                </div>
+                                <a className="aximo-pricing-btn2" href>Select the package</a>
                             </div>
                         </div>
                     </div>
@@ -315,152 +369,16 @@ function Contact() {
             </div>
             {/* End section */}
 
-            <div className="aximo-contact-info-section">
-                <div className="container">
-                    <div className="aximo-contact-info-title">
-                        <h2>
-                            <span className="aximo-title-animation">
-                                Contact Information
-                                <span className="aximo-title-icon">
-                                    <img src="assets/images/v1/star2.png" alt="" />
-                                </span>
-                            </span>
-                        </h2>
-                    </div>
-                    <div className="row">
-                        <div className="col-xl-4 col-md-6">
-                            <a href>
-                                <div className="aximo-contact-info-box wow fadeInUpX" data-wow-delay="0.1s">
-                                    <div className="aximo-contact-info-icon">
-                                        <img src="assets/images/icon/call2.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-contact-info-data">
-                                        <span>Call us</span>
-                                        <p>+088-234-6532-789</p>
-                                        <p>+088-456-3217-005</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-xl-4 col-md-6">
-                            <a href>
-                                <div className="aximo-contact-info-box wow fadeInUpX" data-wow-delay="0.2s">
-                                    <div className="aximo-contact-info-icon">
-                                        <img src="assets/images/icon/email.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-contact-info-data">
-                                        <span>Call us</span>
-                                        <p>example@gmail.com</p>
-                                        <p>example@gmail.com</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-xl-4 col-md-6">
-                            <div className="aximo-contact-info-box wow fadeInUpX" data-wow-delay="0.3s">
-                                <div className="aximo-contact-info-icon">
-                                    <img src="assets/images/icon/map.svg" alt="" />
-                                </div>
-                                <div className="aximo-contact-info-data">
-                                    <span>Office address</span>
-                                    <p>4132 Thornridge City, New York.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* end section */}
 
-            <div className="section">
-                <div className="container">
-                    <div className="aximo-map-wrap">
-                        <div id="map" />
-                    </div>
-                </div>
-            </div>
-            {/* end section */}
 
-            <div className="section aximo-section-padding">
-                <div className="container">
-                    <div className="aximo-section-title center">
-                        <h2>
-                            These FAQs help
-                            <span className="aximo-title-animation">
-                                clients learn about us
-                                <span className="aximo-title-icon">
-                                    <img src="assets/images/v1/star2.png" alt="" />
-                                </span>
-                            </span>
-                        </h2>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="aximo-accordion-normal-wrap responsive-margin">
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>What services does agency offer?</h3>
-                                        <p>Clients often seek to understand the range of design services an agency provides, such as graphic design, web design, branding.</p>
-                                    </div>
-                                </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>What is your design process like?</h3>
-                                        <p>Explaining the design agency's process from initial concept to final delivery helps clients understand what to expect.</p>
-                                    </div>
-                                </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>How much does design work cost?</h3>
-                                        <p>The cost of our design services varies depending on the scope of the project. We provide customized quotes after discussing requirements.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="aximo-accordion-normal-wrap">
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>What's your design process like?</h3>
-                                        <p>Our design process typically involves discovery, concept development, design, revisions based on feedback, and finalization.</p>
-                                    </div>
-                                </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>How do you handle user feedback?</h3>
-                                        <p>We value client feedback and work closely with you to make sure user happy with the final design. We offer a specific number of revisions.</p>
-                                    </div>
-                                </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>Can we see samples of your work?</h3>
-                                        <p>Yes, we're proud to showcase a portfolio of our previous projects. You can find examples of our work on our website or view our portfolio.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* End section */}
+
+
+
+
+
+
+
+
 
             {/* Footer  */}
             <footer className="aximo-footer-section dark-bg">
@@ -562,8 +480,10 @@ function Contact() {
                     </div>
                 </div>
             </footer>
+
+
         </div>
     )
 }
 
-export default Contact
+export default Pricing

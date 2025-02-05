@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Contact() {
+function Singleportfolio() {
     return (
         <div>
+
+
             <div className="aximo-preloader-wrap">
                 <div className="aximo-preloader">
                     <div></div>
@@ -11,6 +13,7 @@ function Contact() {
                     <div></div>
                 </div>
             </div>
+
 
             <header className="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu">
                 <div className="container">
@@ -113,12 +116,12 @@ function Contact() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-4">
                                                     <li className="sub-menu--item">
-                                                        <a href="/Services">
+                                                        <a href="/services">
                                                             <span className="menu-item-text">service</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-/Services">
+                                                        <a href="single-/services">
                                                             <span className="menu-item-text">service details</span>
                                                         </a>
                                                     </li>
@@ -155,7 +158,7 @@ function Contact() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="Singleportfolio">
+                                                        <a href="/Singleportfolio">
                                                             <span className="menu-item-text">Single Portfolio</span>
                                                         </a>
                                                     </li>
@@ -176,7 +179,7 @@ function Contact() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="/Testimonial">
+                                                        <a href="testimonial.html">
                                                             <span className="menu-item-text">testimonial</span>
                                                         </a>
                                                     </li>
@@ -202,7 +205,7 @@ function Contact() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="/Resetpassword">
+                                                        <a href="reset-password.html">
                                                             <span className="menu-item-text">reset password</span>
                                                         </a>
                                                     </li>
@@ -249,121 +252,79 @@ function Contact() {
                     </nav>
                 </div>
             </header>
-            {/*End landex - header - section-- >*/}
+            {/*End landex-header-section */}
+
 
             <div className="aximo-breadcrumb">
                 <div className="container">
-                    <h1 className="post__title">Contact Us</h1>
+                    <h1 className="post__title">Portfolio Details</h1>
                     <nav className="breadcrumbs">
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li aria-current="page"> Contact Us</li>
+                            <li aria-current="page"> Portfolio Details</li>
                         </ul>
                     </nav>
                 </div>
             </div>
             {/* End breadcrumb */}
 
-            <div className="section aximo-section-padding">
+
+            <div className="aximo-project-single-section">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8">
-                            <div className="aximo-section-title">
-                                <h2>
-                                    <span className="aximo-title-animation">
-                                        Contact us for a
-                                        <span className="aximo-title-icon">
-                                            <img src="assets/images/v1/star2.png" alt="" />
+                    <div className="aximo-project-single-thumb wow fadeInUpX" data-wow-delay="0.1s">
+                        <img src="assets/images/portfolio/p_single.png" alt="" />
+                    </div>
+                    <div className="aximo-project-info-wrap">
+                        <div className="aximo-project-info">
+                            <h3>Client:</h3>
+                            <p>Alfado Company,UK</p>
+                        </div>
+                        <div className="aximo-project-info">
+                            <h3>Date:</h3>
+                            <p>June</p>
+                        </div>
+                        <div className="aximo-project-info">
+                            <h3>Duration:</h3>
+                            <p>Two Months</p>
+                        </div>
+                        <div className="aximo-project-info">
+                            <h3>Cost:</h3>
+                            <p>50k USD</p>
+                        </div>
+                    </div>
+                    <div className="aximo-project-single-wrap">
+                        <div className="row">
+                            <div className="col-lg-4 order-lg-2">
+                                <div className="aximo-project-single-thumb2 wow fadeInRight" data-wow-delay="0.1s">
+                                    <img src="assets/images/portfolio/p_single2.png" alt="" />
+                                </div>
+                            </div>
+                            <div className="col-lg-8">
+                                <div className="aximo-default-content m-right-gap">
+                                    <h2>
+                                        How we initiate and
+                                        <span className="aximo-title-animation">
+                                            resolve the project
+                                            <span className="aximo-title-icon">
+                                                <img src="assets/images/v1/star2.png" alt="" />
+                                            </span>
                                         </span>
-                                    </span>
-                                    personal experience
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-5 order-lg-2">
-                            <div className="aximo-contact-thumb wow fadeInRight" data-wow-delay="0.1s">
-                                <img src="assets/images/contact/contact-thumb.png" alt="" />
-                            </div>
-                        </div>
-                        <div className="col-lg-7">
-                            <div className="aximo-main-form">
-                                <form action="#">
-                                    <div className="aximo-main-field">
-                                        <label>Your name</label>
-                                        <input type="text" />
+                                    </h2>
+                                    <p>The project began when a leading technology identified a market need for an innovative and energy-efficient smart home thermostat.</p>
+                                    <div className="aximo-resolve-project-wrap">
+                                        <div className="aximo-resolve-project-item">
+                                            <h3>1. Concept Development:</h3>
+                                            <p>Based on the market research findings, the design team began developing conceptual designs for the smart thermostat. They brainstormed ideas, created mood boards, and explored various design directions.</p>
+                                        </div>
+                                        <div className="aximo-resolve-project-item">
+                                            <h3>2. Manufacturing and Production:</h3>
+                                            <p>Once the design was finalized, the project transitioned to the manufacturing phase. Materials, suppliers, and production processes were carefully selected to ensure quality and cost-effectiveness.</p>
+                                        </div>
+                                        <div className="aximo-resolve-project-item">
+                                            <h3>3. Success and Impact:</h3>
+                                            <p>The smart home thermostat quickly gained popularity and was well-received in the market. The project was a success, benefiting both the company and the environment.</p>
+                                        </div>
                                     </div>
-                                    <div className="aximo-main-field">
-                                        <label>Email Address</label>
-                                        <input type="email" />
-                                    </div>
-                                    <div className="aximo-main-field">
-                                        <label>Phone No</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className="aximo-main-field">
-                                        <label>Write your message here...</label>
-                                        <textarea name="textarea" defaultValue={""} />
-                                    </div>
-                                    <button id="aximo-main-btn" type="submit">Send Message</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* End section */}
-
-            <div className="aximo-contact-info-section">
-                <div className="container">
-                    <div className="aximo-contact-info-title">
-                        <h2>
-                            <span className="aximo-title-animation">
-                                Contact Information
-                                <span className="aximo-title-icon">
-                                    <img src="assets/images/v1/star2.png" alt="" />
-                                </span>
-                            </span>
-                        </h2>
-                    </div>
-                    <div className="row">
-                        <div className="col-xl-4 col-md-6">
-                            <a href>
-                                <div className="aximo-contact-info-box wow fadeInUpX" data-wow-delay="0.1s">
-                                    <div className="aximo-contact-info-icon">
-                                        <img src="assets/images/icon/call2.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-contact-info-data">
-                                        <span>Call us</span>
-                                        <p>+088-234-6532-789</p>
-                                        <p>+088-456-3217-005</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-xl-4 col-md-6">
-                            <a href>
-                                <div className="aximo-contact-info-box wow fadeInUpX" data-wow-delay="0.2s">
-                                    <div className="aximo-contact-info-icon">
-                                        <img src="assets/images/icon/email.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-contact-info-data">
-                                        <span>Call us</span>
-                                        <p>example@gmail.com</p>
-                                        <p>example@gmail.com</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-xl-4 col-md-6">
-                            <div className="aximo-contact-info-box wow fadeInUpX" data-wow-delay="0.3s">
-                                <div className="aximo-contact-info-icon">
-                                    <img src="assets/images/icon/map.svg" alt="" />
-                                </div>
-                                <div className="aximo-contact-info-data">
-                                    <span>Office address</span>
-                                    <p>4132 Thornridge City, New York.</p>
                                 </div>
                             </div>
                         </div>
@@ -372,88 +333,128 @@ function Contact() {
             </div>
             {/* end section */}
 
-            <div className="section">
-                <div className="container">
-                    <div className="aximo-map-wrap">
-                        <div id="map" />
-                    </div>
-                </div>
-            </div>
-            {/* end section */}
 
-            <div className="section aximo-section-padding">
+            <div className="section aximo-project-page aximo-section-padding">
                 <div className="container">
                     <div className="aximo-section-title center">
                         <h2>
-                            These FAQs help
+                            Have a wide range of
                             <span className="aximo-title-animation">
-                                clients learn about us
+                                creative projects
                                 <span className="aximo-title-icon">
                                     <img src="assets/images/v1/star2.png" alt="" />
                                 </span>
                             </span>
                         </h2>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="aximo-accordion-normal-wrap responsive-margin">
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
+                </div>
+                <div className="swiper aximo-project-slider">
+                    <div className="swiper-wrapper">
+                        <div className="swiper-slide">
+                            <div className="aximo-project-thumb">
+                                <img src="assets/images/portfolio/p_1.png" alt="" />
+                                <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <a href>
+                                            <h3>Product Design</h3>
+                                        </a>
+                                        <p>Developing the look and feel of physical products, aesthetics, and functionality.</p>
                                     </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>What services does agency offer?</h3>
-                                        <p>Clients often seek to understand the range of design services an agency provides, such as graphic design, web design, branding.</p>
-                                    </div>
-                                </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>What is your design process like?</h3>
-                                        <p>Explaining the design agency's process from initial concept to final delivery helps clients understand what to expect.</p>
-                                    </div>
-                                </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
-                                    </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>How much does design work cost?</h3>
-                                        <p>The cost of our design services varies depending on the scope of the project. We provide customized quotes after discussing requirements.</p>
-                                    </div>
+                                    <a className="aximo-project-icon" href>
+                                        <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="aximo-accordion-normal-wrap">
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
+                        <div className="swiper-slide">
+                            <div className="aximo-project-thumb">
+                                <img src="assets/images/portfolio/p_2.png" alt="" />
+                                <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <a href>
+                                            <h3>Logo and Branding</h3>
+                                        </a>
+                                        <p>Creating or refreshing a company's logo and developing a cohesive visual identity.</p>
                                     </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>What's your design process like?</h3>
-                                        <p>Our design process typically involves discovery, concept development, design, revisions based on feedback, and finalization.</p>
-                                    </div>
+                                    <a className="aximo-project-icon" href>
+                                        <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="aximo-project-thumb">
+                                <img src="assets/images/portfolio/p_3.png" alt="" />
+                                <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <a href>
+                                            <h3>App UI/UX Design</h3>
+                                        </a>
+                                        <p>Designing the UI/UXe for mobile apps and web applications to ensure usability &amp; engagement.</p>
                                     </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>How do you handle user feedback?</h3>
-                                        <p>We value client feedback and work closely with you to make sure user happy with the final design. We offer a specific number of revisions.</p>
-                                    </div>
+                                    <a className="aximo-project-icon" href>
+                                        <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div className="aximo-accordion-normal-item">
-                                    <div className="aximo-accordion-normal-icon">
-                                        <img src="assets/images/icon/question.svg" alt="" />
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="aximo-project-thumb">
+                                <img src="assets/images/portfolio/p_4.png" alt="" />
+                                <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <a href>
+                                            <h3>Packaging Design</h3>
+                                        </a>
+                                        <p>Creating packaging solutions for products that not only protect attract customers on store.</p>
                                     </div>
-                                    <div className="aximo-accordion-normal-data">
-                                        <h3>Can we see samples of your work?</h3>
-                                        <p>Yes, we're proud to showcase a portfolio of our previous projects. You can find examples of our work on our website or view our portfolio.</p>
+                                    <a className="aximo-project-icon" href>
+                                        <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="aximo-project-thumb">
+                                <img src="assets/images/portfolio/p_5.png" alt="" />
+                                <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <a href>
+                                            <h3>Environmental Design</h3>
+                                        </a>
+                                        <p>Designing trade show booths, exhibition spaces, and immersive installations for events and conferences.</p>
                                     </div>
+                                    <a className="aximo-project-icon" href>
+                                        <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="aximo-project-thumb">
+                                <img src="assets/images/portfolio/p_6.png" alt="" />
+                                <div className="aximo-project-wrap">
+                                    <div className="aximo-project-data">
+                                        <a href>
+                                            <h3>Environmental Design</h3>
+                                        </a>
+                                        <p>Designing trade show booths, exhibition spaces, and immersive installations for events and conferences.</p>
+                                    </div>
+                                    <a className="aximo-project-icon" href>
+                                        <svg width={34} height={28} viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -562,8 +563,9 @@ function Contact() {
                     </div>
                 </div>
             </footer>
+
         </div>
     )
 }
 
-export default Contact
+export default Singleportfolio

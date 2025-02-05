@@ -84,7 +84,7 @@ function Services() {
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="pricing.html">
+                                                <a href="/Pricing">
                                                     <span className="menu-item-text">Pricing</span>
                                                 </a>
                                             </li>
@@ -92,17 +92,17 @@ function Services() {
                                                 <a href="#" data-menu-get="h3" className="drop-trigger">blog <i className="fas fa-angle-down" /></a>
                                                 <ul className="sub-menu shape-none" id="submenu-3">
                                                     <li className="sub-menu--item">
-                                                        <a href="blog.html">
+                                                        <a href="/Blog">
                                                             <span className="menu-item-text">Our Blog</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="blog-grid.html">
+                                                        <a href="/Bloggrid">
                                                             <span className="menu-item-text">Blog grid</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-blog.html">
+                                                        <a href="single-/Blog">
                                                             <span className="menu-item-text">blog details</span>
                                                         </a>
                                                     </li>
@@ -129,12 +129,12 @@ function Services() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-5">
                                                     <li className="sub-menu--item">
-                                                        <a href="team.html">
+                                                        <a href="/Team">
                                                             <span className="menu-item-text">team</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-team.html">
+                                                        <a href="single-/Team">
                                                             <span className="menu-item-text">team details</span>
                                                         </a>
                                                     </li>
@@ -155,7 +155,7 @@ function Services() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-portfolio.html">
+                                                        <a href="Singleportfolio">
                                                             <span className="menu-item-text">Single Portfolio</span>
                                                         </a>
                                                     </li>
@@ -166,12 +166,12 @@ function Services() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-7">
                                                     <li className="sub-menu--item">
-                                                        <a href="faq.html">
+                                                        <a href="/Faq">
                                                             <span className="menu-item-text">faq</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="errors-404.html">
+                                                        <a href="/Error404">
                                                             <span className="menu-item-text">Error 404</span>
                                                         </a>
                                                     </li>
@@ -181,7 +181,7 @@ function Services() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="coming-soon.html">
+                                                        <a href="/Comingsoon">
                                                             <span className="menu-item-text">Coming Soon</span>
                                                         </a>
                                                     </li>
@@ -192,12 +192,12 @@ function Services() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-8">
                                                     <li className="sub-menu--item">
-                                                        <a href="sign-up.html">
+                                                        <a href="/Singup">
                                                             <span className="menu-item-text">sign up</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="sign-in.html">
+                                                        <a href="/Signin">
                                                             <span className="menu-item-text">sign in</span>
                                                         </a>
                                                     </li>
@@ -214,17 +214,17 @@ function Services() {
                                         <a href="#" className="nav-link-item drop-trigger">Blog <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-9">
                                             <li className="sub-menu--item">
-                                                <a href="blog.html">
+                                                <a href="/Blog">
                                                     <span className="menu-item-text">blog</span>
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="blog-grid.html">
+                                                <a href="/Bloggrid">
                                                     <span className="menu-item-text">Blog grid</span>
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="single-blog.html">
+                                                <a href="single-/Blog">
                                                     <span className="menu-item-text">blog Details</span>
                                                 </a>
                                             </li>

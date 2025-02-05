@@ -18,7 +18,7 @@ function Faq() {
                     <nav className="navbar site-navbar">
                         {/* Brand Logo*/}
                         <div className="brand-logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/images/logo/logo-white.svg" alt="" className="light-version-logo" />
                             </a>
                         </div>
@@ -37,7 +37,7 @@ function Faq() {
                                         <a href="#" className="nav-link-item drop-trigger">Demo <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-1">
                                             <li className="sub-menu--item">
-                                                <a href="index.html">
+                                                <a href="/">
                                                     <span className="menu-item-text">Design Agency</span>
                                                 </a>
                                             </li>
@@ -74,18 +74,18 @@ function Faq() {
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="about-us.html" className="nav-link-item">About Us</a>
+                                        <a href="/About" className="nav-link-item">About Us</a>
                                     </li>
                                     <li className="nav-item nav-item-has-children">
                                         <a href="#" className="nav-link-item drop-trigger">Pages <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-2">
                                             <li className="sub-menu--item">
-                                                <a href="about-us.html">
+                                                <a href="/About">
                                                     <span className="menu-item-text">About Us</span>
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="pricing.html">
+                                                <a href="/Pricing">
                                                     <span className="menu-item-text">Pricing</span>
                                                 </a>
                                             </li>
@@ -93,17 +93,17 @@ function Faq() {
                                                 <a href="#" data-menu-get="h3" className="drop-trigger">blog <i className="fas fa-angle-down" /></a>
                                                 <ul className="sub-menu shape-none" id="submenu-3">
                                                     <li className="sub-menu--item">
-                                                        <a href="blog.html">
+                                                        <a href="/Blog">
                                                             <span className="menu-item-text">Our Blog</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="blog-grid.html">
+                                                        <a href="/Bloggrid">
                                                             <span className="menu-item-text">Blog grid</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-blog.html">
+                                                        <a href="single-/Blog">
                                                             <span className="menu-item-text">blog details</span>
                                                         </a>
                                                     </li>
@@ -114,12 +114,12 @@ function Faq() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-4">
                                                     <li className="sub-menu--item">
-                                                        <a href="service.html">
+                                                        <a href="/Services">
                                                             <span className="menu-item-text">service</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-service.html">
+                                                        <a href="single-/Services">
                                                             <span className="menu-item-text">service details</span>
                                                         </a>
                                                     </li>
@@ -130,12 +130,12 @@ function Faq() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-5">
                                                     <li className="sub-menu--item">
-                                                        <a href="team.html">
+                                                        <a href="/Team">
                                                             <span className="menu-item-text">team</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-team.html">
+                                                        <a href="single-/Team">
                                                             <span className="menu-item-text">team details</span>
                                                         </a>
                                                     </li>
@@ -156,7 +156,7 @@ function Faq() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="single-portfolio.html">
+                                                        <a href="Singleportfolio">
                                                             <span className="menu-item-text">Single Portfolio</span>
                                                         </a>
                                                     </li>
@@ -167,12 +167,12 @@ function Faq() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-7">
                                                     <li className="sub-menu--item">
-                                                        <a href="faq.html">
+                                                        <a href="/Faq">
                                                             <span className="menu-item-text">faq</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="errors-404.html">
+                                                        <a href="/Error404">
                                                             <span className="menu-item-text">Error 404</span>
                                                         </a>
                                                     </li>
@@ -182,7 +182,7 @@ function Faq() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="coming-soon.html">
+                                                        <a href="/Comingsoon">
                                                             <span className="menu-item-text">Coming Soon</span>
                                                         </a>
                                                     </li>
@@ -193,12 +193,12 @@ function Faq() {
                                                 </a>
                                                 <ul className="sub-menu shape-none" id="submenu-8">
                                                     <li className="sub-menu--item">
-                                                        <a href="sign-up.html">
+                                                        <a href="/Signup">
                                                             <span className="menu-item-text">sign up</span>
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="sign-in.html">
+                                                        <a href="/Signin">
                                                             <span className="menu-item-text">sign in</span>
                                                         </a>
                                                     </li>
@@ -215,30 +215,30 @@ function Faq() {
                                         <a href="#" className="nav-link-item drop-trigger">Blog <i className="fas fa-angle-down" /></a>
                                         <ul className="sub-menu" id="submenu-9">
                                             <li className="sub-menu--item">
-                                                <a href="blog.html">
+                                                <a href="/Blog">
                                                     <span className="menu-item-text">blog</span>
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="blog-grid.html">
+                                                <a href="/Bloggrid">
                                                     <span className="menu-item-text">Blog grid</span>
                                                 </a>
                                             </li>
                                             <li className="sub-menu--item">
-                                                <a href="single-blog.html">
+                                                <a href="single-/Blog">
                                                     <span className="menu-item-text">blog Details</span>
                                                 </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="contact-us.html" className="nav-link-item">Contact Us</a>
+                                        <a href="/Contact" className="nav-link-item">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-                            <a className="aximo-default-btn pill aximo-header-btn" href="contact-us.html">
+                            <a className="aximo-default-btn pill aximo-header-btn" href="/Contact">
                                 Contact Us
                             </a>
                         </div>
@@ -257,7 +257,7 @@ function Faq() {
                     <h1 className="post__title">FAQs</h1>
                     <nav className="breadcrumbs">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li aria-current="page"> FAQs</li>
                         </ul>
                     </nav>
