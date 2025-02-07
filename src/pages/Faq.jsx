@@ -1,6 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Header from './Header';
 
-function Faq() {
+// const Accordion = () => {
+//     const [activeIndex, setActiveIndex] = useState(null);
+
+//     const handleToggle = (index) => {
+//         setActiveIndex(activeIndex === index ? null : index);
+//     };
+
+
+
+function Faq({ multiple = false }) {
+
+
+
+
+    const [activeIndex, setActiveIndex] = useState(0);  // Set initial activeIndex to 0
+
+    const handleToggle = (index) => {
+        if (multiple) {
+            setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+        } else {
+            setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+        }
+    };
+
+
+
+
+
     return (
         <div>
 
@@ -13,244 +41,8 @@ function Faq() {
                 </div>
             </div>
 
-            <header className="site-header aximo-header-section aximo-header1 dark-bg" id="sticky-menu">
-                <div className="container">
-                    <nav className="navbar site-navbar">
-                        {/* Brand Logo*/}
-                        <div className="brand-logo">
-                            <a href="/">
-                                <img src="assets/images/logo/logo-white.svg" alt="" className="light-version-logo" />
-                            </a>
-                        </div>
-                        <div className="menu-block-wrapper">
-                            <div className="menu-overlay" />
-                            <nav className="menu-block" id="append-menu-header">
-                                <div className="mobile-menu-head">
-                                    <div className="go-back">
-                                        <i className="fa fa-angle-left" />
-                                    </div>
-                                    <div className="current-menu-title" />
-                                    <div className="mobile-menu-close">×</div>
-                                </div>
-                                <ul className="site-menu-main">
-                                    <li className="nav-item nav-item-has-children">
-                                        <a href="#" className="nav-link-item drop-trigger">Demo <i className="fas fa-angle-down" /></a>
-                                        <ul className="sub-menu" id="submenu-1">
-                                            <li className="sub-menu--item">
-                                                <a href="/">
-                                                    <span className="menu-item-text">Design Agency</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="index-02.html">
-                                                    <span className="menu-item-text">Startup Agency</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="index-03.html">
-                                                    <span className="menu-item-text">SEO Agency</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="index-04.html">
-                                                    <span className="menu-item-text">Business Consultation</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="index-05.html">
-                                                    <span className="menu-item-text">Digital Marketing</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="index-06.html">
-                                                    <span className="menu-item-text">Interior Design Agency</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="index-07.html">
-                                                    <span className="menu-item-text">Advertising agency</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="/About" className="nav-link-item">About Us</a>
-                                    </li>
-                                    <li className="nav-item nav-item-has-children">
-                                        <a href="#" className="nav-link-item drop-trigger">Pages <i className="fas fa-angle-down" /></a>
-                                        <ul className="sub-menu" id="submenu-2">
-                                            <li className="sub-menu--item">
-                                                <a href="/About">
-                                                    <span className="menu-item-text">About Us</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="/Pricing">
-                                                    <span className="menu-item-text">Pricing</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">blog <i className="fas fa-angle-down" /></a>
-                                                <ul className="sub-menu shape-none" id="submenu-3">
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Blog">
-                                                            <span className="menu-item-text">Our Blog</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Bloggrid">
-                                                            <span className="menu-item-text">Blog grid</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="single-/Blog">
-                                                            <span className="menu-item-text">blog details</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Service<i className="fas fa-angle-down" />
-                                                </a>
-                                                <ul className="sub-menu shape-none" id="submenu-4">
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Services">
-                                                            <span className="menu-item-text">service</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="single-/Services">
-                                                            <span className="menu-item-text">service details</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Team<i className="fas fa-angle-down" />
-                                                </a>
-                                                <ul className="sub-menu shape-none" id="submenu-5">
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Team">
-                                                            <span className="menu-item-text">team</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="single-/Team">
-                                                            <span className="menu-item-text">team details</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Portfolio<i className="fas fa-angle-down" />
-                                                </a>
-                                                <ul className="sub-menu shape-none" id="submenu-6">
-                                                    <li className="sub-menu--item">
-                                                        <a href="portfolio-02.html">
-                                                            <span className="menu-item-text">Portfolio One Column</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="portfolio-01.html">
-                                                            <span className="menu-item-text">Portfolio Two Column</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="Singleportfolio">
-                                                            <span className="menu-item-text">Single Portfolio</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Utility<i className="fas fa-angle-down" />
-                                                </a>
-                                                <ul className="sub-menu shape-none" id="submenu-7">
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Faq">
-                                                            <span className="menu-item-text">faq</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Error404">
-                                                            <span className="menu-item-text">Error 404</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="testimonial.html">
-                                                            <span className="menu-item-text">testimonial</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Comingsoon">
-                                                            <span className="menu-item-text">Coming Soon</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="sub-menu--item nav-item-has-children">
-                                                <a href="#" data-menu-get="h3" className="drop-trigger">Account<i className="fas fa-angle-down" />
-                                                </a>
-                                                <ul className="sub-menu shape-none" id="submenu-8">
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Signup">
-                                                            <span className="menu-item-text">sign up</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="/Signin">
-                                                            <span className="menu-item-text">sign in</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="sub-menu--item">
-                                                        <a href="reset-password.html">
-                                                            <span className="menu-item-text">reset password</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item nav-item-has-children">
-                                        <a href="#" className="nav-link-item drop-trigger">Blog <i className="fas fa-angle-down" /></a>
-                                        <ul className="sub-menu" id="submenu-9">
-                                            <li className="sub-menu--item">
-                                                <a href="/Blog">
-                                                    <span className="menu-item-text">blog</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="/Bloggrid">
-                                                    <span className="menu-item-text">Blog grid</span>
-                                                </a>
-                                            </li>
-                                            <li className="sub-menu--item">
-                                                <a href="single-/Blog">
-                                                    <span className="menu-item-text">blog Details</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="/Contact" className="nav-link-item">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-                            <a className="aximo-default-btn pill aximo-header-btn" href="/Contact">
-                                Contact Us
-                            </a>
-                        </div>
-                        {/* mobile menu trigger */}
-                        <div className="mobile-menu-trigger light">
-                            <span />
-                        </div>
-                        {/*/.Mobile Menu Hamburger Ends*/}
-                    </nav>
-                </div>
-            </header>
-            {/*End landex-header-section */}
+            <Header />
+
 
             <div className="aximo-breadcrumb">
                 <div className="container">
@@ -279,51 +71,56 @@ function Faq() {
                         </h2>
                     </div>
                     <div className="aximo-accordion-wrap wow fadeInUpX" data-wow-delay="0.1s" id="aximo-accordion">
-                        <div className="aximo-accordion-item open">
-                            <div className="aximo-accordion-header">
+                        <div className={`aximo-accordion-item ${activeIndex === 0 ? 'open' : ''}`}>
+                            <div className="aximo-accordion-header" onClick={() => handleToggle(0)}>
                                 <h3>What services does your design agency offer?</h3>
                             </div>
-                            <div className="aximo-accordion-body">
+                            <div className={`aximo-accordion-body ${activeIndex === 0 ? 'show' : ''}`}>
                                 <p>Clients often seek to understand the range of design services an agency provides, such as graphic design, web design, branding, and more. We offer a wide range of design services, including graphic design, web design, branding, UI/UX design, and more.</p>
                             </div>
                         </div>
-                        <div className="aximo-accordion-item">
-                            <div className="aximo-accordion-header">
+
+                        <div className={`aximo-accordion-item ${activeIndex === 1 ? 'open' : ''}`}>
+                            <div className="aximo-accordion-header" onClick={() => handleToggle(1)}>
                                 <h3>What industries or types of clients do you typically work with?</h3>
                             </div>
-                            <div className="aximo-accordion-body">
+                            <div className={`aximo-accordion-body ${activeIndex === 1 ? 'show' : ''}`}>
                                 <p>This question helps potential clients determine if the agency has experience in their specific industry or with similar projects. Our agency stands out due to our creative expertise, attention to detail, and commitment to delivering designs that not only look great.</p>
                             </div>
                         </div>
-                        <div className="aximo-accordion-item">
-                            <div className="aximo-accordion-header">
+
+                        <div className={`aximo-accordion-item ${activeIndex === 2 ? 'open' : ''}`}>
+                            <div className="aximo-accordion-header" onClick={() => handleToggle(2)}>
                                 <h3>Can you provide examples of your previous work/portfolio?</h3>
                             </div>
-                            <div className="aximo-accordion-body">
+                            <div className={`aximo-accordion-body ${activeIndex === 2 ? 'show' : ''}`}>
                                 <p>Yes, we're proud to showcase a portfolio of our previous projects. You can find examples of our work on our website or request a tailored portfolio relevant to your needs. Clients often want to see examples of the agency's previous projects to assess the quality and style.</p>
                             </div>
                         </div>
-                        <div className="aximo-accordion-item">
-                            <div className="aximo-accordion-header">
+
+                        <div className={`aximo-accordion-item ${activeIndex === 3 ? 'open' : ''}`}>
+                            <div className="aximo-accordion-header" onClick={() => handleToggle(3)}>
                                 <h3>What is your design process like?</h3>
                             </div>
-                            <div className="aximo-accordion-body">
+                            <div className={`aximo-accordion-body ${activeIndex === 3 ? 'show' : ''}`}>
                                 <p>Explaining the design agency's process from initial concept to final delivery helps clients understand what to expect.</p>
                             </div>
                         </div>
-                        <div className="aximo-accordion-item">
-                            <div className="aximo-accordion-header">
+
+                        <div className={`aximo-accordion-item ${activeIndex === 4 ? 'open' : ''}`}>
+                            <div className="aximo-accordion-header" onClick={() => handleToggle(4)}>
                                 <h3>How do you handle revisions and feedback during a project?</h3>
                             </div>
-                            <div className="aximo-accordion-body">
+                            <div className={`aximo-accordion-body ${activeIndex === 4 ? 'show' : ''}`}>
                                 <p>Clients are interested in knowing how the agency manages feedback and makes revisions to ensure the final design meets their expectations. We value client feedback and work closely with you to make sure you're happy with the final design.</p>
                             </div>
                         </div>
-                        <div className="aximo-accordion-item">
-                            <div className="aximo-accordion-header">
+
+                        <div className={`aximo-accordion-item ${activeIndex === 5 ? 'open' : ''}`}>
+                            <div className="aximo-accordion-header" onClick={() => handleToggle(5)}>
                                 <h3>Do you offer ongoing support after project completion?</h3>
                             </div>
-                            <div className="aximo-accordion-body">
+                            <div className={`aximo-accordion-body ${activeIndex === 5 ? 'show' : ''}`}>
                                 <p>Yes, we offer ongoing support, maintenance, and updates as needed, ensuring that your design assets and projects remain up to date and functional. Some clients may have urgent projects, so it's important to communicate if the agency can accommodate rush orders.</p>
                             </div>
                         </div>
@@ -353,13 +150,13 @@ function Faq() {
                                         <div className="aximo-info">
                                             <ul>
                                                 <li>Give us a call:</li>
-                                                <li><a href>(123) 456-7890</a></li>
+                                                <li><a href=" ">(123) 456-7890</a></li>
                                             </ul>
                                         </div>
                                         <div className="aximo-info">
                                             <ul>
                                                 <li>Send us an email:</li>
-                                                <li><a href>info@mthemeus.com</a></li>
+                                                <li><a href=" ">info@mthemeus.com</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -418,7 +215,7 @@ function Faq() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="aximo-footer-logo">
-                                    <a href>
+                                    <a href='/'>
                                         <img src="assets/images/logo/logo-white.svg" alt="" />
                                     </a>
                                 </div>
