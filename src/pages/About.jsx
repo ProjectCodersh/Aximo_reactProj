@@ -2,6 +2,19 @@ import React from 'react'
 import Header from './Header'
 
 function AboutUs() {
+
+
+  const getStyles = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 481 && screenWidth <= 1024) {
+      return {
+        letterSpacing: '0px', // You can use any px or em value here
+      };
+    }
+  };
+
+
+
   return (
     <div>
 
@@ -39,7 +52,7 @@ function AboutUs() {
             <div className="row">
               <div className="col-lg-7">
                 <h2>
-                  <span className="aximo-title-animation">
+                  <span className="aximo-title-animation" style={getStyles()}>
                     We make your
                     <span className="aximo-title-icon">
                       <img src="assets/images/v1/star2.png" alt="Star Icon" />

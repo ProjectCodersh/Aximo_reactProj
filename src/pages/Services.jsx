@@ -15,6 +15,19 @@ function Services() {
 
 
 
+    const getStyles = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 481 && screenWidth <= 1024) {
+            return {
+                letterSpacing: '0px', // You can use any px or em value here
+            };
+        }
+    };
+
+
+
+
+
 
     return (
         <div>
@@ -221,7 +234,7 @@ function Services() {
                             <div className="col-lg-7 d-flex align-items-center">
                                 <div className="aximo-default-content">
                                     <h2>
-                                        <span className="aximo-title-animation">
+                                        <span className="aximo-title-animation" style={getStyles()}>
                                             Our high-quality
                                             <span className="aximo-title-icon">
                                                 <img src="assets/images/v1/star2.png" alt="" />

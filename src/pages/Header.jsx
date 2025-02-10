@@ -81,6 +81,29 @@ function Header() {
     }, [windowWidth, isMenuOpen]);  // Added isMenuOpen as dependency for better control
 
 
+    useEffect(() => {
+        // Function to close the menu if clicked outside of it
+        const handleClickOutside = (event) => {
+            // Check if the click is outside the menu or the overlay
+            if (
+                isMenuOpen && // If the menu is open
+                !event.target.closest('.menu-block') && // If the click is outside the menu
+                !event.target.closest('.menu-overlay') // If the click is outside the overlay
+            ) {
+                toggleMenu(); // Close the menu
+            }
+        };
+
+        // Add event listener for click events
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // Clean up the event listener when the component is unmounted or menu is closed
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
+
 
 
 
@@ -280,7 +303,7 @@ function Header() {
                                                         </a>
                                                     </li>
                                                     <li className="sub-menu--item">
-                                                        <a href="/Portfolio/Single">
+                                                        <a href="/Singleportfolio">
                                                             <span className="menu-item-text">Single Portfolio</span>
                                                         </a>
                                                     </li>
@@ -345,8 +368,6 @@ function Header() {
                                             </li>
                                         </ul>
                                     </li>
-
-
 
 
                                     <li className="nav-item nav-item-has-children" onClick={() => showSubMenu('submenu9', 'Blog')}>

@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from 'react';
 function Comingsoon() {
 
 
-    const deadlineDate = new Date('December 31, 2023 23:59:59').getTime();
+    const deadlineDate = new Date('December 30, 2023 22:58:59').getTime();
     // State to hold the countdown values
     const [countdown, setCountdown] = useState({
         days: 0,
@@ -116,85 +116,7 @@ function Comingsoon() {
             {/* Footer  */}
             <footer className="aximo-footer-section dark-bg">
                 <div className="container">
-                    <div className="aximo-footer-top aximo-section-padding">
-                        <div className="row">
-                            <div className="col-lg-7">
-                                <div className="aximo-default-content light position-relative">
-                                    <h2>
-                                        <span className="aximo-title-animation">
-                                            Let's start a
-                                            <span className="aximo-title-icon">
-                                                <img src="assets/images/v1/star2.png" alt="" />
-                                            </span>
-                                        </span>
-                                        project together
-                                    </h2>
-                                    <p>We work closely with our clients to understand their objectives, target audience, and unique needs. We use our creative skills to translate these requirements and practical design solutions.</p>
-                                    <div className="aximo-info-wrap">
-                                        <div className="aximo-info">
-                                            <ul>
-                                                <li>Give us a call:</li>
-                                                <li><a href=" ">(123) 456-7890</a></li>
-                                            </ul>
-                                        </div>
-                                        <div className="aximo-info">
-                                            <ul>
-                                                <li>Send us an email:</li>
-                                                <li><a href=" ">info@mthemeus.com</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="aximo-social-icon social-large">
-                                        <ul>
-                                            <li>
-                                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                                                    <i className="icon-twitter" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
-                                                    <i className="icon-facebook" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                                    <i className="icon-instagram" />
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                                                    <i className="icon-linkedin" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="aximo-hero-shape aximo-footer-shape">
-                                        <img src="assets/images/v1/shape1.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-5">
-                                <div className="aximo-form-wrap">
-                                    <h4>Send us a message</h4>
-                                    <form action="#">
-                                        <div className="aximo-form-field">
-                                            <input type="text" placeholder="Your name" />
-                                        </div>
-                                        <div className="aximo-form-field">
-                                            <input type="email" placeholder="Your email address" />
-                                        </div>
-                                        <div className="aximo-form-field">
-                                            <input type="text" placeholder="+088-234-6849" />
-                                        </div>
-                                        <div className="aximo-form-field">
-                                            <textarea name="textarea" placeholder="Write your message here..." defaultValue={""} />
-                                        </div>
-                                        <button id="aximo-submit-btn" type="submit">Send message <span><img src="assets/images/icon/arrow-right3.svg" alt="" /></span></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div className="aximo-footer-bottom">
                         <div className="row">
                             <div className="col-lg-6">
@@ -206,7 +128,7 @@ function Comingsoon() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="aximo-copywright one">
-                                    <p> © Copyright 2024, All Rights Reserved by Mthemeus</p>
+                                    {/* <p> © Copyright 2024, All Rights Reserved by Mthemeus</p> */}
                                 </div>
                             </div>
                         </div>

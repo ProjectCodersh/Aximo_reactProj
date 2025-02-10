@@ -2,7 +2,12 @@
 import React, { useState } from 'react'
 import Header from './Header';
 
+
 function Index() {
+
+
+
+
 
 
 
@@ -10,6 +15,18 @@ function Index() {
 
     const handleClick = (index) => {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index)); // Toggle open/close
+    };
+
+
+
+
+    const getStyles = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 481 && screenWidth <= 1024) {
+            return {
+                letterSpacing: '0px', // You can use any px or em value here
+            };
+        }
     };
 
 
@@ -33,7 +50,7 @@ function Index() {
                         <div className="col-lg-8">
                             <div className="aximo-hero-content">
                                 <h1>
-                                    <span className="aximo-title-animation">
+                                    <span className="aximo-title-animation" style={getStyles()}>
                                         A creative
                                         <img src="assets/images/v1/star.png" alt="" />
                                     </span>
@@ -148,7 +165,7 @@ function Index() {
                         <div className="row">
                             <div className="col-lg-7">
                                 <h2>
-                                    <span className="aximo-title-animation">
+                                    <span className="aximo-title-animation" style={getStyles()}>
                                         We make your
                                         <span className="aximo-title-icon">
                                             <img src="assets/images/v1/star2.png" alt="" />
@@ -329,7 +346,7 @@ function Index() {
                             <div className="col-lg-7 d-flex align-items-center">
                                 <div className="aximo-default-content">
                                     <h2>
-                                        <span className="aximo-title-animation">
+                                        <span className="aximo-title-animation" style={getStyles()}>
                                             Our high-quality
                                             <span className="aximo-title-icon">
                                                 <img src="assets/images/v1/star2.png" alt="" />
